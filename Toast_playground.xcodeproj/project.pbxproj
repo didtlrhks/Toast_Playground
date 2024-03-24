@@ -14,6 +14,7 @@
 		8ECCFAC12BB0592000C39125 /* Toast_playgroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECCFAC02BB0592000C39125 /* Toast_playgroundTests.swift */; };
 		8ECCFACB2BB0592000C39125 /* Toast_playgroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECCFACA2BB0592000C39125 /* Toast_playgroundUITests.swift */; };
 		8ECCFACD2BB0592000C39125 /* Toast_playgroundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECCFACC2BB0592000C39125 /* Toast_playgroundUITestsLaunchTests.swift */; };
+		8ECCFADD2BB05C9500C39125 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 8ECCFADC2BB05C9500C39125 /* PopupView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		8ECCFAC62BB0592000C39125 /* Toast_playgroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Toast_playgroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ECCFACA2BB0592000C39125 /* Toast_playgroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast_playgroundUITests.swift; sourceTree = "<group>"; };
 		8ECCFACC2BB0592000C39125 /* Toast_playgroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast_playgroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8ECCFADA2BB05C6700C39125 /* Toast-playground-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Toast-playground-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ECCFADD2BB05C9500C39125 /* PopupView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +97,7 @@
 		8ECCFAAE2BB0591D00C39125 /* Toast_playground */ = {
 			isa = PBXGroup;
 			children = (
+				8ECCFADA2BB05C6700C39125 /* Toast-playground-Info.plist */,
 				8ECCFAAF2BB0591D00C39125 /* Toast_playgroundApp.swift */,
 				8ECCFAB12BB0591D00C39125 /* ContentView.swift */,
 				8ECCFAB32BB0592000C39125 /* Assets.xcassets */,
@@ -143,6 +147,9 @@
 			dependencies = (
 			);
 			name = Toast_playground;
+			packageProductDependencies = (
+				8ECCFADC2BB05C9500C39125 /* PopupView */,
+			);
 			productName = Toast_playground;
 			productReference = 8ECCFAAC2BB0591D00C39125 /* Toast_playground.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +222,9 @@
 				Base,
 			);
 			mainGroup = 8ECCFAA32BB0591C00C39125;
+			packageReferences = (
+				8ECCFADB2BB05C9500C39125 /* XCRemoteSwiftPackageReference "PopupView" */,
+			);
 			productRefGroup = 8ECCFAAD2BB0591D00C39125 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -425,6 +435,7 @@
 				DEVELOPMENT_TEAM = 9GGZWXBXQ6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Toast-playground-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +465,7 @@
 				DEVELOPMENT_TEAM = 9GGZWXBXQ6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Toast-playground-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -588,6 +600,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8ECCFADB2BB05C9500C39125 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8ECCFADC2BB05C9500C39125 /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8ECCFADB2BB05C9500C39125 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8ECCFAA42BB0591C00C39125 /* Project object */;
 }
